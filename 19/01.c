@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *nilai = NULL;  // Variabel global
+int nilai[100];  // Variabel global
 int jumlahdata;
 
 void input();
@@ -15,8 +15,6 @@ int main()
 
   printf("Nilai terbesar: %d\n", terbesar);
 
-  free(nilai);
-
   return 0;
 }
 
@@ -24,8 +22,6 @@ void input()
 {
   printf("Masukkan jumlah data: ");
   scanf("%d", &jumlahdata);
-  
-  nilai = (int *)malloc(jumlahdata * sizeof(int));
 
   for (int i = 0; i < jumlahdata; i++)
   {
