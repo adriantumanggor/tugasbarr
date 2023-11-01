@@ -2,7 +2,7 @@
 #include <string.h>
 int pjgstr(char str[]) {
   int i = 0;
-  while (str[i] != '\n') {
+  while (str[i] != '\0') {
     i++;
   }
   return i;
