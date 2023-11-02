@@ -1,45 +1,33 @@
 #include <stdio.h>
-int pjgstr(char str[]);
-void balikstr(char str[], int);
+void copystr(int str[],int copy[]);
+char str[100];
+char copy[100];
 int main()
 {
-    char str[100];
-
-    printf("Masukkan string: ");
+    printf("masukan string:");
     fgets(str, 100, stdin);
 
-    int len = pjgstr(str);
+    copystr(str,copy);
 
-    printf("Panjang string: %d\n", len);
-
-    balikstr(str, len);
-
-    printf("Kebalikan dari string: %s\n", str);
+    printf("string asal: %s", str);
+    printf("string asal: %s", copy);
 
     return 0;
 }
-
-int pjgstr(char str[])
+void copystr(int str[],int copy[])
 {
-    int i = 0;
-    while (str[i] != '\0')
+    int banyak_huruf, i, j;
+    while (str != '\0')
     {
-        if (str[i] == '\n')
+        if (str == '\n')
         {
             break;
         }
-        i++;
+        banyak_huruf++;
     }
-    return i;
-}
-void balikstr(char str[], int len)
-{
-    int i, j;
 
-    for (i = 0, j = len - 1; i < j; i++, j--)
+    for (i = 0 , j = banyak_huruf; i < j; i++)
     {
-        char temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
+        /* code */
     }
 }
