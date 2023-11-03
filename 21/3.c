@@ -32,6 +32,7 @@ int pjgstr(char str[])
     }
     return i;
 }
+
 void balikstr(char str[], int len)
 {
     int i, j;

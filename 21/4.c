@@ -1,33 +1,28 @@
 #include <stdio.h>
-void copystr(int str[],int copy[]);
-char str[100];
-char copy[100];
+void copystr(int str[], int copy[]);
+
 int main()
 {
+    char str[100];
+    char copy[100];
     printf("masukan string:");
     fgets(str, 100, stdin);
 
-    copystr(str,copy);
+    copystr(str, copy);
 
     printf("string asal: %s", str);
     printf("string asal: %s", copy);
 
     return 0;
 }
-void copystr(int str[],int copy[])
-{
-    int banyak_huruf, i, j;
-    while (str != '\0')
-    {
-        if (str == '\n')
-        {
-            break;
-        }
-        banyak_huruf++;
-    }
 
-    for (i = 0 , j = banyak_huruf; i < j; i++)
+void copystr(int str[], int copy[])
+{
+    int i = 0;
+    while(str[i]!='\0')
     {
-        /* code */
+        copy[i] = str[i];
+        i++;
     }
+    copy[i] = '\0';
 }
