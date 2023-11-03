@@ -13,6 +13,6 @@ int main()
   {
     printf("array-%d\n", array[i]);
   }
-
+  
   return 0;
 }
