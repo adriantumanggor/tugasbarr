@@ -10,10 +10,10 @@ To clone this repository to your local computer, open your terminal and use the 
 
 ```bash
 git clone https://github.com/adriantumanggor/tugasbarr
-
+```
 ## Pulling Updates
 
-To fetch and incorporate the latest changes from this repository to your local copy, follow these steps:
+To fetch and incorporate the latest changes from this repository to your local copy:
 
 1. Open your terminal and navigate to the repository directory using the `cd` command.
 2. Run the following command to pull updates:
@@ -21,4 +21,4 @@ To fetch and incorporate the latest changes from this repository to your local c
 ```bash
 git pull origin main
 This command fetches changes from the remote repository (GitHub) and merges them into your local copy. Make sure you are in the main branch (or the appropriate branch) to get the latest updates.  
-
+```
