@@ -20,5 +20,4 @@ To fetch and incorporate the latest changes from this repository to your local c
 
 ```bash
 git pull origin main
-This command fetches changes from the remote repository (GitHub) and merges them into your local copy. Make sure you are in the main branch (or the appropriate branch) to get the latest updates.  
 ```
