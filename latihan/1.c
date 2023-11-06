@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int *twoSum(int *nums, int, int, int *returnSize);
+int *twoSum(int *nums, int, int);
 
 int main()
 {
@@ -16,8 +16,7 @@ int main()
     }
 
     int target1 = 26;
-    int returnSize1;
-    int *result1 = twoSum(nums1, jumlah_string, target1, &returnSize1);
+    int *result1 = twoSum(nums1, jumlah_string, target1);
     if (result1 != NULL)
     {
         printf("[%d, %d]\n", result1[0], result1[1]);
@@ -26,14 +25,12 @@ int main()
     return 0;
 }
 
-int *twoSum(int *nums, int N, int target, int *returnSize)
+int *twoSum(int *nums, int jumlahString, int target)
 {
-    int* arr = malloc(2 * sizeof(int));
-    arr = (int *) malloc(2 * sizeof(int));
-    *returnSize = 2;
-    for (int i = 0; i < N - 1; i++)
+    int *arr = malloc(2 * sizeof(int));
+    for (int i = 0; i < jumlahString - 1; i++)
     {
-        for (int j = i + 1; j < N; j++)
+        for (int j = i + 1; j < jumlahString; j++)
         {
             if (nums[i] + nums[j] == target)
             {
