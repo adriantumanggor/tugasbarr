@@ -7,9 +7,9 @@ int main()
 
     printf("Masukkan string: ");
     fgets(str, 100, stdin);
-    int len = pjgstr(str);
+    int panjangstrng = pjgstr(str);
 
-    printf("Panjang string: %d\n", len);
+    printf("Panjang string: %d\n", panjangstrng);
 
     return 0;
 }

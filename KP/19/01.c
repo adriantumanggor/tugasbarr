@@ -1,25 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int nilai[100];  // Variabel global
-int jumlahdata;
-
-void input();
-int findmax();
+int input(int[]);
+int findmax(int[], int);
 
 int main()
 {
-  input();
+  int nilai[100];
 
-  int terbesar = findmax();
+  int jumlahdata = input(nilai);
 
-  printf("Nilai terbesar: %d\n", terbesar);
+  int max = findmax(nilai, jumlahdata);
+
+  printf("Nilai terbesar: %d\n", max);
 
   return 0;
 }
 
-void input()
+int input(int nilai[])
 {
+  int jumlahdata;
+  
   printf("Masukkan jumlah data: ");
   scanf("%d", &jumlahdata);
 
@@ -28,9 +29,11 @@ void input()
     printf("Masukkan data-%d: ", i + 1);
     scanf("%d", &nilai[i]);
   }
+
+  return jumlahdata;
 }
 
-int findmax()
+int findmax(int nilai[],int jumlahdata)
 {
   int max = nilai[0];
   for (int i = 1; i < jumlahdata; i++)

@@ -24,5 +24,4 @@ void copystr(int str[], int copy[])
         copy[i] = str[i];
         i++;
     }
-    copy[i] = '\0';
 }

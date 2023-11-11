@@ -6,7 +6,7 @@ int findmax(int *nilai, int jumlahdata);
 
 int main()
 {
-  int *nilai = NULL; 
+  int *nilai = NULL;
   int jumlahdata;
 
   input(&nilai, &jumlahdata);

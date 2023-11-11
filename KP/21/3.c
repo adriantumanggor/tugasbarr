@@ -1,6 +1,6 @@
 #include <stdio.h>
-int pjgstr(char str[]);
-void balikstr(char str[], int);
+int pjgstr(char []);
+void balikstr(char [], int);
 int main()
 {
     char str[100];
@@ -33,7 +33,7 @@ void balikstr(char str[], int len)
 {
     int i, j;
 
-    for (i = 0, j = len - 1; i < j; i++, j--)
+    for (i = 0, j = pjgstr(str) - 1; i < j; i++, j--)
     {
         char temp = str[i];
         str[i] = str[j];

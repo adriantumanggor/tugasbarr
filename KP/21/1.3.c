@@ -2,11 +2,11 @@
 
 int main()
 {
-    int str[100];
+    int str[10];
     
     printf("Masukkan string fgets: ");
-    fgets(str, 100, stdin);
+    fgets(str, 10, stdin);
     printf("String yang diinputkan fgets: %s\n", str);
-
+    
     return 0;
 }
