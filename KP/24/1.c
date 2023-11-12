@@ -13,5 +13,4 @@ int main()
     printf("Nilai yang ditunjuk oleh px = %d\n", *px);
     printf("Nilai y = %d\n", y);
     return 0;
-    
 }
