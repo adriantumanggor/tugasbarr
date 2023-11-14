@@ -9,10 +9,9 @@ int main() {
     fgets(str, sizeof(str), stdin);
 
     strcpy(copy,str);
-    int len = strlen(str);
     strrev(str);
 
-    printf("Panjang string: %d\n", len);
+    printf("Panjang string: %d\n", strlen(str));
     printf("String terbalik: %s\n", str);
     printf("String copy: %s\n", copy);
 
