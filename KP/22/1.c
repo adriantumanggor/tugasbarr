@@ -8,12 +8,13 @@ int main() {
     printf("Masukkan string: ");
     fgets(str, sizeof(str), stdin);
 
-    strrev(str);
+    strcpy(copy,str);
     int len = strlen(str);
-    
+    strrev(str);
 
     printf("Panjang string: %d\n", len);
     printf("String terbalik: %s\n", str);
+    printf("String copy: %s\n", copy);
 
     return 0;
 }
