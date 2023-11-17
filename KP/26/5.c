@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    // Pointer Basics
-    int num = 42;
-    int *ptr = &num;
-
-    printf("Value: %d\n", *ptr);
-    printf("Address: %p\n", ptr);
-
+int main()
+{
+    int *i;
+    int j = 10, k, m[] = {2, 5};
+    int **l;
+    i = m;
+    i++;
+    *i = j;
+    j = *i;
+    i = &j;
+    k = *(&j);
+    l = &i;
     return 0;
 }
