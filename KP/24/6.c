@@ -6,5 +6,6 @@ int main()
     y = *ip;
     *ip = 3;
     printf("x = %d, y = %d", x, y);
+    printf("\n");
     return 0;
 }
