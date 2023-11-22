@@ -26,7 +26,7 @@ int hariterakhir(int bulan, int tahun)
     }
     else
     {
-        return 30;
+        return 31;
     }
 }
 bool tanggalValid(struct Date hariini)

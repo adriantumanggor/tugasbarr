@@ -5,6 +5,7 @@
 struct Pesanan
 {
     char kode;
+    char jenis[10];
     int jumlah;
 };
 
@@ -64,6 +65,7 @@ int main()
     } while (jawaban != 'n');
 
     printf("\n");
+    printf("%d\n",i);
 
     nota(daftarHarga, daftarpesanan, i);
 
@@ -85,9 +87,9 @@ void nota(struct Harga harga[], struct Pesanan pesanan[], int jumlahPesanan)
         int jumlah = pesanan[i].jumlah;
 
         int hargapotong;
-
         int index;
-        for (int j = 0; j < sizeof(harga) / sizeof(harga[0]); j++)
+        int j;
+        for (j = 0; j < 3; j++)
         {
             if (harga[j].kode == kode)
             {
@@ -96,7 +98,6 @@ void nota(struct Harga harga[], struct Pesanan pesanan[], int jumlahPesanan)
             }
         }
         hargapotong = harga[index].hargaPotong;
-
         int subtotal = hargapotong * jumlah;
         totalharga += subtotal;
 
